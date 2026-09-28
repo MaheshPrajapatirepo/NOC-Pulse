@@ -2,8 +2,8 @@ import sqlite3
 import pandas as pd
 import os
 
-DB_PATH = "noc_data/noc_warehouse.db"
-DATA_DIR = "noc_data"
+DB_PATH = "NOC-Pulse/noc_data/noc_warehouse.db"
+DATA_DIR = "NOC-Pulse/noc_data"
 
 SCHEMA = {
     "dim_date": """

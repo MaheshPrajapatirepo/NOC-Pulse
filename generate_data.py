@@ -8,7 +8,7 @@ SEED = 42
 random.seed(SEED)
 np.random.seed(SEED)
 
-OUTPUT_DIR = "noc_data"
+OUTPUT_DIR = "NOC-pulse/noc_data"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 
