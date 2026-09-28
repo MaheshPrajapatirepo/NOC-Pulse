@@ -55,14 +55,15 @@ noc_powerbi/
 ---
 
 ## Data Model (Star Schema)
-fact_incidents
-    dim_date (date_id)
-    dim_severity (severity_id) → holds SLA targets per priority
-    dim_category (category_id)
-    dim_region (region_id)
-    dim_team (team_id)
-    dim_device (device_id)
-
+```bash
+    fact_incidents
+        dim_date (date_id)
+        dim_severity (severity_id) → holds SLA targets per priority
+        dim_category (category_id)
+        dim_region (region_id)
+        dim_team (team_id)
+        dim_device (device_id)
+```
 5,000 artificial events divided into 8 types, 8 regions, 5 NOC teams, 
 and 100 network devices. Event occurrence rate is weighted to imitate
 real NOC traffic – P3 events are the most numerous (about 45%), while P1 events are very infrequent (about 8%). Also, 80% of all events occur on weekdays.
