@@ -33,34 +33,33 @@ to Power BI
 ## Project Structure
 
 noc_powerbi/
-│
-├── generate_data.py # generates all 7 CSV files
-├── load_warehouse.py # loads CSVs into SQLite, runs EDA
-│
-├── noc_data/
-│ ├── fact_incidents.csv # 5,000 rows, 2 years (2023–2024)
-│ ├── dim_date.csv
-│ ├── dim_severity.csv
-│ ├── dim_category.csv
-│ ├── dim_region.csv
-│ ├── dim_team.csv
-│ ├── dim_device.csv
-│ └── noc_warehouse.db
-│
-└── NOC_Pulse.pbix # Power BI dashboard file
-└── Dashboard PDF & Modeling Screenshots
+    generate_data.py # generates all 7 CSV files
+    load_warehouse.py # loads CSVs into SQLite, runs EDA
+    
+    noc_data/
+        fact_incidents.csv # 5,000 rows, 2 years (2023–2024)
+        dim_date.csv
+        dim_severity.csv
+        dim_category.csv
+        dim_region.csv
+        dim_team.csv
+        dim_device.csv
+        noc_warehouse.db
+    
+    NOC_Pulse.pbix # Power BI dashboard file
+    Dashboard PDF & Modeling Screenshots
 
 
 ---
 
 ## Data Model (Star Schema)
 fact_incidents
-├── dim_date (date_id)
-├── dim_severity (severity_id) → holds SLA targets per priority
-├── dim_category (category_id)
-├── dim_region (region_id)
-├── dim_team (team_id)
-└── dim_device (device_id)
+    dim_date (date_id)
+    dim_severity (severity_id) → holds SLA targets per priority
+    dim_category (category_id)
+    dim_region (region_id)
+    dim_team (team_id)
+    dim_device (device_id)
 
 5,000 artificial events divided into 8 types, 8 regions, 5 NOC teams, 
 and 100 network devices. Event occurrence rate is weighted to imitate
