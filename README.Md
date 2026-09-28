@@ -194,3 +194,11 @@ breach rate. They have low MTTR due to rapid response once escalated.
 SQLite was used as the data warehouse layer before using EDA and schema
 validation and Power BI connection. In a live environment, this should
 have been replaced by SQL Server or PostgreSQL.
+
+## Author
+
+**Mahesh Prajapati**
+
+- LinkedIn: [https://www.linkedin.com/in/mahesh-prajapati-profile/](...)
+- GitHub: [https://github.com/MaheshPrajapatirepo/](...)
+- Email: mahesh.prajapati242509@gmail.com/ m.mahesh@op.iitg.ac.in
