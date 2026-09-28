@@ -32,23 +32,25 @@ to Power BI
 
 ## Project Structure
 
+```bash
 noc_powerbi/
-    generate_data.py # generates all 7 CSV files
-    load_warehouse.py # loads CSVs into SQLite, runs EDA
+    NOC-Pulse/
+        generate_data.py # generates all 7 CSV files
+        load_warehouse.py # loads CSVs into SQLite, runs EDA
     
-    noc_data/
-        fact_incidents.csv # 5,000 rows, 2 years (2023–2024)
-        dim_date.csv
-        dim_severity.csv
-        dim_category.csv
-        dim_region.csv
-        dim_team.csv
-        dim_device.csv
-        noc_warehouse.db
+        noc_data/
+            fact_incidents.csv # 5,000 rows, 2 years (2023–2024)
+            dim_date.csv
+            dim_severity.csv
+            dim_category.csv
+            dim_region.csv
+            dim_team.csv
+            dim_device.csv
+            noc_warehouse.db
     
-    NOC_Pulse.pbix # Power BI dashboard file
-    Dashboard PDF & Modeling Screenshots
-
+        NOC_Pulse.pbix # Power BI dashboard file
+        Dashboard PDF & Modeling Screenshots
+```
 
 ---
 
